@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link";
 import ButtonLink from "./ButtonLink";
+import Image from "next/image";
 const Navbar = () => {
     return (
         <motion.header
@@ -18,8 +19,16 @@ const Navbar = () => {
                         transition={{ ease: "easeInOut", duration: 1.5, delay: 0.7 }}
                         className="logo flex items-center gap-2"
                     >
-                        <span className="text-2xl text-accent animate-spin">
+                        <span className="w-10 h-10 text-accent animate-spin">
                             {/* icon */}
+                            <Image
+                                src='/logo.png'
+                                alt='logo'
+                                width="100"
+                                height="100"
+                                priority
+                                className="w-full h-full object-cover"
+                            />
                         </span>
                         <Link href="#" className="linear-flow">
                             Sumona Shimu
@@ -31,30 +40,30 @@ const Navbar = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1.5, delay: 0.5 }}
-                    className="mid py-4 px-10 border border-light/10 rounded-tl-full rounded-br-full bg-dark backdrop-blur-xl hover:px-20 duration-500 shadow-xl"
+                    className="mid py-4 px-10 "
                 >
                     <nav className="flex gap-5">
-                        <li className="list-none">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#home" className="linear-flow">
                                 Home
                             </Link>
                         </li>
-                        <li className="list-none">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#about" className="linear-flow">
                                 About
                             </Link>
                         </li>
-                        <li className="list-none">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#projects" className="linear-flow">
                                 Projects
                             </Link>
                         </li>
-                        <li className="list-none">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#skills" className="linear-flow">
                                 Skills
                             </Link>
                         </li>
-                        <li className="list-none">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#contact" className="linear-flow">
                                 Contact
                             </Link>
@@ -62,7 +71,7 @@ const Navbar = () => {
                     </nav>
                 </motion.div>
 
-                <div className="right">
+                {/* <div className="right">
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -73,7 +82,7 @@ const Navbar = () => {
                             placeholder="Download Resume"
                         />
                     </motion.div>
-                </div>
+                </div> */}
             </div>
         </motion.header>
     );
