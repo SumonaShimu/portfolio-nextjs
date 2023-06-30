@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="bg-dark text-light ">
       <Hero/>
       <About/>
       <Projects/>

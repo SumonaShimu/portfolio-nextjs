@@ -2,12 +2,12 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import ButtonLink from './ButtonLink';
+import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript, TbBrandMongodb, TbBrandNextjs, TbBrandReact } from "react-icons/tb";
 import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <section>
-            {/* Architecting the Web: Full Stack Mastery in Action */}
+        <section className='h-[100vh]'>
             <section className="wrapper section-padding mt-5 h-[calc(100vh-6rem)] relative">
                 {/* HEADLINES */}
                 <div className="text-[6rem] leading-[1] uppercase font-semibold text-center">
@@ -22,7 +22,7 @@ const Hero = () => {
                         </motion.h2>
                     </div>
                     {/* SECOND LINE */}
-                    <div className="overflow-hidden text-[10rem] font-normal text-dark">
+                    <div className="overflow-hidden text-[10rem] font-normal">
                         <motion.h2
                             initial={{ y: "100%" }}
                             whileInView={{ y: 0 }}
@@ -44,38 +44,41 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* DESCRIPTIONS */}
-                <div className="mt-5 uppercase flex gap-10 overflow-hidden text-center bg-red-100/50">
-                    <motion.p
-                        initial={{ y: "-100%" }}
-                        whileInView={{ y: 0 }}
-                        transition={{ ease: "easeInOut", duration: 1, delay: 2.1 }}
-                        className="w-[25rem]"
-                    >
-                        Passionate Full-Stack Developer crafting cutting-edge web apps.
-                        Thrives in teams, problem-solver. Delivers solutions with coding
-                        passion.
-                    </motion.p>
-                    <motion.p
-                        initial={{ y: "-100%" }}
-                        whileInView={{ y: 0 }}
-                        transition={{ ease: "easeInOut", duration: 1, delay: 2.3 }}
-                    >
-                        Sumona Shimu <br />{" "}
-                        <ButtonLink
-                            href="mailto:shohan.sub.56@gmail.com"
-                            target="_blank"
-                            placeholder="shohan.sub.56@gmail.com"
-                        />
-                    </motion.p>
-                </div>
 
-                <motion.hr
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ ease: "easeInOut", duration: 1.5, delay: 1.9 }}
-                    className="mt-5 border-light/30"
-                />
+                <div className='w-[50%] mx-auto'>
+                    <motion.hr
+                        initial={{ width: 0, x: "0%" }}
+                        whileInView={{ width: "100%", x: "18%" }}
+                        transition={{ ease: "easeInOut", duration: 1.5, delay: 1 }}
+                        className="mt-5 border-light/20"
+                    />
+                    <p className='pt-2 text-justify text-sm'>Sumona Akter Shimu | An enthusiastic and ambitious Full-stack Developer with a strong passion for creating innovative solutions | Specializing in the MERN stack | Honed skills to develop robust and dynamic web applications | With a keen eye for detail and a problem-solving mindset | Thrive in the world of competitive programming | Constantly pushing limits to excel</p>
+
+                    <div className='mt-3 w-full mx-auto text-center flex justify-center'>
+                        <li className="list-none px-2  py-2 hover:border border-light rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                            <Link href="#" className="linear-flow">
+                                Download Resume
+                            </Link>
+                        </li>
+                        <li className="list-none px-2  py-2 hover:border border-error text-error rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                            <Link href="#" className="linear-flow">
+                                Visit Linkedin
+                            </Link>
+                        </li>
+                        <li className="list-none px-2  py-2 hover:border border-light rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                            <Link href="#" className="linear-flow">
+                            Visit Github
+                            </Link>
+                        </li>
+                    </div>
+
+                    <motion.hr
+                        initial={{ width: 0, x: "0%" }}
+                        whileInView={{ width: "100%", x: "-10%" }}
+                        transition={{ ease: "easeInOut", duration: 1.5, delay: 1.2 }}
+                        className="mt-1 border-light/20"
+                    />
+                </div>
 
                 {/* SKILL CARDS Right*/}
                 <div className="absolute right-0 top-0 w-[40rem] h-[30rem] z-[1]">
@@ -86,7 +89,7 @@ const Hero = () => {
                         className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[35%] top-[35%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-8xl flex justify-center items-center text-yellow-400"
                     >
                         <span>
-                            icon1
+                            <TbBrandReact />
                         </span>
                     </motion.div>
 
@@ -94,10 +97,10 @@ const Hero = () => {
                         initial={{ opacity: 0, top: "90%" }}
                         whileInView={{ opacity: 1, top: "80%" }}
                         transition={{ ease: "easeInOut", duration: 1, delay: 1.3 }}
-                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[65%] top-[80%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-lime-400"
+                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[65%] top-[80%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-9xl flex justify-center items-center text-lime-600"
                     >
                         <span>
-                            icon3
+                            <TbBrandMongodb />
                         </span>
                     </motion.div>
 
@@ -105,25 +108,25 @@ const Hero = () => {
                         initial={{ opacity: 0, left: "95%" }}
                         whileInView={{ opacity: 1, left: "85%" }}
                         transition={{ ease: "easeInOut", duration: 1, delay: 1.5 }}
-                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-violet-400"
+                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-violet-600"
                     >
                         <span>
-                            icon4
+                            <TbBrandNextjs />
                         </span>
                     </motion.div>
 
-                    
+
                 </div>
                 {/* SKILL CARDS Left*/}
                 <div className="absolute left-0 top-20 w-[30rem] h-[40rem] z-[1]">
-                <motion.div
+                    <motion.div
                         initial={{ opacity: 0, left: "25%" }}
                         whileInView={{ opacity: 1, left: "55%" }}
                         transition={{ ease: "easeInOut", duration: 1, delay: 1.1 }}
-                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[35%] top-[40%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-8xl flex justify-center items-center text-yellow-400"
+                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[35%] top-[40%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-8xl flex justify-center items-center text-blue-500"
                     >
                         <span>
-                            icon1
+                            <TbBrandCss3 />
                         </span>
                     </motion.div>
 
@@ -131,10 +134,10 @@ const Hero = () => {
                         initial={{ opacity: 0, top: "90%" }}
                         whileInView={{ opacity: 1, top: "80%" }}
                         transition={{ ease: "easeInOut", duration: 1, delay: 1.3 }}
-                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[55%] top-[80%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-lime-400"
+                        className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[55%] top-[80%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-orange-600"
                     >
                         <span>
-                            icon3
+                            <TbBrandHtml5 />
                         </span>
                     </motion.div>
 
@@ -142,14 +145,14 @@ const Hero = () => {
                         initial={{ opacity: 0, left: "95%" }}
                         whileInView={{ opacity: 1, left: "30%" }}
                         transition={{ ease: "easeInOut", duration: 1.5, delay: 1.5 }}
-                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-violet-400"
+                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-9xl flex justify-center items-center text-yellow-500"
                     >
                         <span>
-                            icon4
+                            <TbBrandJavascript />
                         </span>
                     </motion.div>
 
-                    
+
                 </div>
 
             </section>

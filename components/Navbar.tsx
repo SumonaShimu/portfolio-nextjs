@@ -17,9 +17,9 @@ const Navbar = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ ease: "easeInOut", duration: 1.5, delay: 0.7 }}
-                        className="logo flex items-center gap-2"
+                        className="logo flex items-center gap-2  animate-pulse" 
                     >
-                        <span className="w-10 h-10 text-accent animate-spin">
+                        <span className="w-10 h-10 text-accent">
                             {/* icon */}
                             <Image
                                 src='/logo.png'
@@ -43,46 +43,33 @@ const Navbar = () => {
                     className="mid py-4 px-10 "
                 >
                     <nav className="flex gap-5">
-                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#home" className="linear-flow">
                                 Home
                             </Link>
                         </li>
-                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#about" className="linear-flow">
                                 About
                             </Link>
                         </li>
-                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#projects" className="linear-flow">
                                 Projects
                             </Link>
                         </li>
-                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#skills" className="linear-flow">
                                 Skills
                             </Link>
                         </li>
-                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-tl-full rounded-br-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
+                        <li className="list-none px-2  py-2 hover:border border-light/10 rounded-full hover:bg-dark hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <Link href="#contact" className="linear-flow">
                                 Contact
                             </Link>
                         </li>
                     </nav>
                 </motion.div>
-
-                {/* <div className="right">
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ ease: "easeInOut", duration: 1.5, delay: 0.9 }}
-                    >
-                        <ButtonLink
-                            href="#"
-                            placeholder="Download Resume"
-                        />
-                    </motion.div>
-                </div> */}
             </div>
         </motion.header>
     );
