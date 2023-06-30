@@ -156,7 +156,7 @@ const Hero = () => {
                         initial={{ opacity: 0, left: "95%" }}
                         whileInView={{ opacity: 1, left: "30%" }}
                         transition={{ ease: "easeInOut", duration: 1.5, delay: 1.5 }}
-                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-[10rem] flex justify-center items-center text-green-700"
+                        className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-[10rem] flex justify-center items-center text-green-600"
                     >
                         <span>
                             <DiNodejs/>
