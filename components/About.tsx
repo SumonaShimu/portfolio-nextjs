@@ -5,14 +5,14 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { data } from '@/data/stats';
 import CountUp from 'react-countup';
+import Heading from './Heading';
 const About = () => {
     return (
         <section id="about" className="wrapper section-padding w-screen">
-            <h1>About Me</h1>
-
+            <Heading title='About'/>
             {/* ABOUT */}
             <div className="mt-20 grid md:grid-cols-2 grid-cols-1 gap-10 px-10">
-                
+
                 {/* CONTENTS */}
                 <div className="wrap text-xl overflow-hidden">
                     <motion.p
@@ -88,7 +88,7 @@ const About = () => {
                         <div className="absolute z-[1] top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-accent/10 to-accent/50 w-full h-full group-hover:opacity-0 duration-[4000ms]"></div>
                         <Image
                             src="https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Md. Shohanur Rahman"
+                            alt="Sumona Shimu"
                             width={500}
                             height={500}
                             priority
