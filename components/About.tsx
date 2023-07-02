@@ -12,10 +12,10 @@ const About = () => {
         <section id="about" className="wrapper section-padding w-screen">
             <Heading title='About' />
             {/* ABOUT */}
-            <div className="mt-20 grid grid-cols-5 gap-10 px-10">
+            <div className="mt-20 grid grid-cols-3 gap-10 px-10">
 
                 {/* CONTENTS */}
-                <div className="wrap col-span-3 text-xl overflow-hidden">
+                <div className="wrap col-span-2 text-xl overflow-hidden">
                     <motion.p
                         initial={{ y: "-100%" }}
                         whileInView={{ y: 0 }}
@@ -90,7 +90,7 @@ const About = () => {
                     initial={{ scale: 0, borderRadius: "100px" }}
                     whileInView={{ scale: 1, borderRadius: "1rem" }}
                     transition={{ ease: "easeInOut", duration: 1 }}
-                    className="col-span-2 w-full h-[35rem] bg-black/40 border border-light/10 rounded-2xl shadow-xl"
+                    className="w-full h-[35rem] bg-black/40 border border-light/10 rounded-2xl shadow-xl"
                 >
                     {/* IMAGE */}
                     <motion.div
@@ -102,7 +102,7 @@ const About = () => {
                         {/* OVERLAY */}
                         <div className="absolute z-[1] top-0 left-0 right-0 bottom-0 w-full h-full group-hover:opacity-0 duration-[4000ms]"></div>
                         <Image
-                            src="https://raw.githubusercontent.com/SumonaShimu/images/main/img/sumonashimu/sumonashimu.jpg"
+                            src="https://raw.githubusercontent.com/SumonaShimu/images/main/img/sumonashimu/sumona.jpg"
                             alt="Sumona Shimu"
                             width={500}
                             height={500}

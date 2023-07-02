@@ -1,12 +1,12 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Raleway } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Footer from '@/components/Footer'
 
-const font = Raleway({ subsets: ['latin'] })
+const font = Poppins({ subsets: ['latin'],weight: ['400'] })
 
 export const metadata = {
-  title: "Sumona's Portfolio",
+  title: "Sumona Shimu",
 }
 
 export default function RootLayout({
