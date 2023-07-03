@@ -57,7 +57,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         transition={{ ease: "easeInOut", duration: 1.5 }}
         className="relative" >
           <Image
-            src={data[i].image}
+            src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
@@ -68,7 +68,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
             <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
-                key={data[++i].id}
+                key={data[i].id}
                 id={data[i].id}
                 title={data[i].title}
                 image={data[i].image}
@@ -89,7 +89,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         transition={{ ease: "easeInOut", duration: 1.5 }}
         className="row-span-2 relative" >
           <Image
-            src={data[i].image}
+            src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
@@ -100,7 +100,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
             <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
-                key={data[++i].id}
+                key={data[i].id}
                 id={data[i].id}
                 title={data[i].title}
                 image={data[i].image}
@@ -121,7 +121,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         transition={{ ease: "easeInOut", duration: 1.5 }}
         className="row-span-2 relative" >
           <Image
-            src={data[i].image}
+            src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
@@ -132,7 +132,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
             <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
-                key={data[++i].id}
+                key={data[i].id}
                 id={data[i].id}
                 title={data[i].title}
                 image={data[i].image}
@@ -153,7 +153,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         transition={{ ease: "easeInOut", duration: 1.5 }}
         className="relative" >
           <Image
-            src={data[i].image}
+            src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
@@ -164,7 +164,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
             <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
-                key={data[++i].id}
+                key={data[i].id}
                 id={data[i].id}
                 title={data[i].title}
                 image={data[i].image}
@@ -185,7 +185,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         transition={{ ease: "easeInOut", duration: 1.5 }}
         className="relative" >
           <Image
-            src={data[i].image}
+            src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
@@ -196,7 +196,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
             <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
-                key={data[++i].id}
+                key={data[i].id}
                 id={data[i].id}
                 title={data[i].title}
                 image={data[i].image}
