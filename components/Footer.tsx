@@ -13,7 +13,7 @@ const Footer = () => {
       initial={{ borderRadius:'0' }}
       whileInView={{ borderRadius:'0' }}
       transition={{ ease: "easeInOut", duration: 1 }}
-      className="wrapper section-padding lg:py-5 bg-gradient-to-b from-dark to-accent/90 text-light w-full"
+      className="lg:py-5 bg-gradient-to-b from-dark to-accent/90 text-light"
     >
       <div className="mt-10 flex flex-col lg:flex-row justify-between items-start px-20 text-lg md:text-xl">
         <div className="overflow-hidden">

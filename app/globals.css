@@ -28,7 +28,11 @@
 
 /* COMMON STYLES */
 .wrapper {
-  @apply container mx-auto px-2 md:px-0;
+  @apply container mx-auto px-2 md:px-0 m-0;
+}
+
+body{
+  @apply bg-dark;
 }
 
 .section-padding {
