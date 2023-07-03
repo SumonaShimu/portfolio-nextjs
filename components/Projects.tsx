@@ -17,20 +17,20 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
     <section className="wrapper section-padding" id="projects">
       <Heading title="Projects" />
 
-      <div className="h-[100vh] cards-wrapper mt-20 grid md:grid-cols-3 grid-rows-3 gap-10 overflow-hidden">
+      <div className="md:h-[100vh] cards-wrapper mt-20 grid lg:grid-cols-3 lg:grid-rows-3 gap-10 overflow-hidden">
         {/* project 0 */}
         <motion.div 
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
         transition={{ ease: "easeInOut", duration: 1.5 }}
-        className="row-span-2 relative" >
+        className="lg:row-span-2  relative" >
           <Image
             src={data[i].image}
             alt={data[i].title}
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
@@ -62,7 +62,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
@@ -87,14 +87,14 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
         transition={{ ease: "easeInOut", duration: 1.5 }}
-        className="row-span-2 relative" >
+        className="lg:row-span-2  relative" >
           <Image
             src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
@@ -119,14 +119,14 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
         initial={{ y: "-100%" }}
         whileInView={{ y: 0 }}
         transition={{ ease: "easeInOut", duration: 1.5 }}
-        className="row-span-2 relative" >
+        className="lg:row-span-2  relative" >
           <Image
             src={data[++i].image}
             alt={data[i].title}
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
@@ -158,7 +158,7 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
@@ -190,11 +190,11 @@ const Projects: React.FC<ProjectsProps> = ({ showAll }) => {
             width={1280}
             height={720}
             priority
-            className="w-full h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
+            className="w-full h-[50vh] lg:h-full object-cover object-top group-hover:scale-125 duration-[4000ms]"
           />
           {/* features visible on hover */}
           <div className="text-light bg-dark/80 absolute top-0 left-0 h-full w-full p-10 opacity-0 hover:opacity-100 duration-500">
-            <div className="border border-light w-full h-full p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
+            <div className="border border-light w-full h-full p-2 md:p-5 bg-dark/80  overflow-y-scroll overflow-x-hidden">
               <ProjectCard
                 key={data[i].id}
                 id={data[i].id}

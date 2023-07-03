@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     
-      <div className="text-justify flex flex-col items-center gap-10">
+      <div className="text-justify flex flex-col items-center gap-5 md:gap-10">
         {/* TITLE */}
         <div className="relative inline-block">
           <Link href={`/projects/${id}`} className="inline-block">

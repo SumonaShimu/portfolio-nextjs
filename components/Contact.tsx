@@ -56,7 +56,7 @@ const Contact = () => {
       <form
           ref={form}
           onSubmit={handleSubmit}
-          className="right flex flex-col gap-10 text-2xl w-full border bg-accent/50 p-10 rounded-xl"
+          className="right flex flex-col gap-10 text-xl md:text-2xl w-full border bg-accent/50 p-10 rounded-xl"
         >
           <div className="flex gap-10 w-full">
             <div className="overflow-hidden w-full">
@@ -120,7 +120,8 @@ const Contact = () => {
               />
             </motion.div>
           </div>
-          <div className="text-xl flex justify-center relative overflow-hidden duration-500 group">
+
+          <div className="lg:text-xl flex flex-wrap lg:flex-nowrap justify-center relative overflow-hidden duration-500 group">
             <motion.div
               initial={{ x: "-100%" }}
               whileInView={{ x: "100%" }}
@@ -172,7 +173,7 @@ const Contact = () => {
               <ButtonLink href="#" placeholder="LinkedIn" target="_blank" />
             </motion.div>
           </div>
-          <div className="flex gap-10 text-2xl">
+          <div className="flex flex-col lg:flex-row gap-3 md-5 lg:gap-10 text-lg lg:text-2xl">
             <div>
               <div className="overflow-hidden">
                 <motion.p

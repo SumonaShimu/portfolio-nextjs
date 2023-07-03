@@ -9,18 +9,18 @@ import Heading from './Heading';
 import Link from 'next/link';
 const About = () => {
     return (
-        <section id="about" className="wrapper section-padding w-screen">
+        <section id="about" className="wrapper section-padding w-screen min-h-[100vh]">
             <Heading title='About' />
             {/* ABOUT */}
-            <div className="mt-20 grid grid-cols-3 gap-10 px-10">
+            <div className="mt-20 grid lg:grid-cols-3 gap-10 px-10">
 
                 {/* CONTENTS */}
-                <div className="wrap col-span-2 text-xl overflow-hidden">
+                <div className="wrap lg:col-span-2 text-xl overflow-hidden">
                     <motion.p
                         initial={{ y: "-100%" }}
                         whileInView={{ y: 0 }}
                         transition={{ ease: "easeInOut", duration: 1.5, delay: 0.5 }}
-                        className='text-justify text-2xl'
+                        className='text-justify text-lg lg:text-2xl'
                     >
                         I am Sumona Akter Shimu, a Full-stack Developer with a background in competitive programming and a strong affinity for JavaScript.  My expertise lies in the dynamic MERN stack, where I excel at crafting powerful web applications. Currently, I am excitedly exploring the world of Next.js, further expanding my skillset. My portfolio showcases my expertise in building innovative and user-friendly applications. Let`s collaborate to create remarkable web solutions that make a lasting impact!
                     </motion.p>

@@ -28,7 +28,7 @@
 
 /* COMMON STYLES */
 .wrapper {
-  @apply container mx-auto px-5 md:px-0;
+  @apply container mx-auto px-2 md:px-0;
 }
 
 .section-padding {

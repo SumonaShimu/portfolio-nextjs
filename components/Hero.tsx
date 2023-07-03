@@ -9,10 +9,9 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <section className='h-[100vh]'>
-            <section className="wrapper section-padding mt-5 h-[calc(100vh-6rem)] relative">
+        <section className='2xl:h-[calc(100vh-6rem)] wrapper section-padding relative mt-[8rem] md:mt-[4rem]'>
                 {/* HEADLINES */}
-                <div className="text-[6rem] leading-[1] uppercase font-semibold text-center">
+                <div className="text-[3rem] xs:text-[4rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6rem] leading-[1] uppercase font-semibold text-center">
                     {/* FIRST LINE */}
                     <div className="overflow-hidden">
                         <motion.h2
@@ -24,7 +23,7 @@ const Hero = () => {
                         </motion.h2>
                     </div>
                     {/* SECOND LINE */}
-                    <div className="overflow-hidden text-[10rem] font-normal">
+                    <div className="overflow-hidden font-normal text-[3rem] xs:text-[4rem] sm:text-[5rem] md:text-[6rem] lg:text-[10rem] ]">
                         <motion.h2
                             initial={{ y: "100%" }}
                             whileInView={{ y: 0 }}
@@ -65,7 +64,7 @@ const Hero = () => {
                         className='pt-2 text-justify text-sm'>Sumona Akter Shimu | An enthusiastic and ambitious Full-stack Developer with a strong passion for creating innovative solutions | Specializing in the MERN stack | Honed skills to develop robust and dynamic web applications | With a keen eye for detail and a problem-solving mindset | Thrive in the world of competitive programming | Constantly pushing limits to excel
                     </motion.p>
 
-                    <div className='mt-5 mb-2 w-full mx-auto text-center flex justify-center'>
+                    <div className='mt-5 mb-2 w-full mx-auto text-center flex justify-center flex-wrap'>
                         <li className="list-none px-2  py-2 hover:border border-light rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
                             <ButtonLink
                                 href="https://www.linkedin.com/in/sumonashimu"
@@ -98,7 +97,7 @@ const Hero = () => {
                 </motion.div>
 
                 {/* SKILL CARDS Right*/}
-                <div className="absolute right-0 top-0 w-[40rem] h-[30rem] z-[1]">
+                <div className="hidden xl:block absolute right-0 top-0 w-[40rem] h-[30rem] z-[1]">
                     <motion.div
                         initial={{ opacity: 0, left: "25%" }}
                         whileInView={{ opacity: 1, left: "75%" }}
@@ -135,7 +134,7 @@ const Hero = () => {
 
                 </div>
                 {/* SKILL CARDS Left*/}
-                <div className="absolute left-0 top-20 w-[30rem] h-[40rem] z-[1]">
+                <div className="hidden xl:block absolute left-0 top-20 w-[30rem] h-[40rem] z-[1]">
                     <motion.div
                         initial={{ opacity: 0, left: "25%" }}
                         whileInView={{ opacity: 1, left: "55%" }}
@@ -172,7 +171,7 @@ const Hero = () => {
 
                 </div>
 
-            </section>
+        
         </section>
     );
 };
