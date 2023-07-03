@@ -22,7 +22,7 @@ const Heading: React.FC<HeadingProps> = ({ title }) => {
                 <FaCode className='text-4xl font-thin'></FaCode>
                 <p>_____________________________________</p>
             </div>
-            <div><p className='text-6xl font-semibold text-light'>{title}</p></div>
+            <div><p className='text-6xl font-semibold text-light my-5'>{title}</p></div>
             <div className='flex gap-2'>
                 <p>---------------------------------<FaCodeCommit className='inline-block'></FaCodeCommit>---------------------------------<FaCodeCommit className='inline-block'></FaCodeCommit>---------------------------------</p>
             </div>

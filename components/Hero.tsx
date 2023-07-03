@@ -48,10 +48,10 @@ const Hero = () => {
 
                 {/* description */}
                 <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ ease: "easeInOut", duration: 1.5, delay: 0.7 }}
-                        className='w-[50%] mx-auto'>
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ ease: "easeInOut", duration: 1.5, delay: 0.7 }}
+                    className='w-[50%] mx-auto'>
                     <motion.hr
                         initial={{ width: 0, x: "0%" }}
                         whileInView={{ width: "100%", x: "18%" }}
@@ -65,21 +65,27 @@ const Hero = () => {
                         className='pt-2 text-justify text-sm'>Sumona Akter Shimu | An enthusiastic and ambitious Full-stack Developer with a strong passion for creating innovative solutions | Specializing in the MERN stack | Honed skills to develop robust and dynamic web applications | With a keen eye for detail and a problem-solving mindset | Thrive in the world of competitive programming | Constantly pushing limits to excel
                     </motion.p>
 
-                    <div className='mt-3 w-full mx-auto text-center flex justify-center'>
+                    <div className='mt-5 mb-2 w-full mx-auto text-center flex justify-center'>
                         <li className="list-none px-2  py-2 hover:border border-light rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
-                            <Link href="#" className="linear-flow">
-                                Download Resume
-                            </Link>
+                            <ButtonLink
+                                href="https://www.linkedin.com/in/sumonashimu"
+                                placeholder="Visit Linkedin"
+                                target="_blank"
+                            />
                         </li>
                         <li className="list-none px-2  py-2 hover:border border-error text-error rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
-                            <Link href="#" className="linear-flow">
-                                Visit Linkedin
-                            </Link>
+                            <ButtonLink
+                                href="https://drive.google.com/uc?export=download&id=1Vgz6egG1E81msIZTk2OQfoRMqpMoJl2q"
+                                placeholder="Download Resume"
+                                target="_blank"
+                            />
                         </li>
                         <li className="list-none px-2  py-2 hover:border border-light rounded-full  hover:backdrop-blur-xl hover:px-10 duration-500 hover:shadow-xl">
-                            <Link href="#" className="linear-flow">
-                            Visit Github
-                            </Link>
+                        <ButtonLink
+                                href="https://github.com/SumonaShimu"
+                                placeholder="Visit Github"
+                                target="_blank"
+                            />
                         </li>
                     </div>
 
@@ -137,7 +143,7 @@ const Hero = () => {
                         className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[35%] top-[40%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-8xl flex justify-center items-center text-blue-500"
                     >
                         <span>
-                            <SiExpress/>
+                            <SiExpress />
                         </span>
                     </motion.div>
 
@@ -148,7 +154,7 @@ const Hero = () => {
                         className="w-[10rem] h-[10rem] rounded-full border border-light/10 absolute left-[55%] top-[80%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-7xl flex justify-center items-center text-yellow-500"
                     >
                         <span>
-                        <TbBrandJavascript />
+                            <TbBrandJavascript />
                         </span>
                     </motion.div>
 
@@ -159,7 +165,7 @@ const Hero = () => {
                         className="w-[15rem] h-[15rem] rounded-full border border-light/10 absolute left-[85%] top-[60%] -translate-x-1/2 -translate-y-1/2 bg-black/30 backdrop-blur-xl shadow-2xl text-[10rem] flex justify-center items-center text-green-600"
                     >
                         <span>
-                            <DiNodejs/>
+                            <DiNodejs />
                         </span>
                     </motion.div>
 

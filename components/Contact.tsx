@@ -7,6 +7,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import Heading from "./Heading";
 import ButtonLink from "./ButtonLink";
+import { MdOutgoingMail } from "react-icons/md";
 
 
 const Contact = () => {
@@ -50,92 +51,12 @@ const Contact = () => {
     <section id="contact" className="wrapper section-padding">
       <Heading title="Contact Me" />
 
-      <div className="mt-20 grid grid-cols-2 gap-20">
-        <div className="left flex flex-col gap-10">
-          <div className="overflow-hidden">
-            <motion.h4
-              initial={{ y: "100%" }}
-              whileInView={{ y: 0 }}
-              transition={{ ease: "easeInOut", duration: 1 }}
-              className="text-5xl"
-            >{`Let's unlock together the next level of possibilities! Reach out.`}</motion.h4>
-          </div>
-          <div className="text-2xl">
-            <div className="overflow-hidden">
-              <motion.p
-                initial={{ y: "100%" }}
-                whileInView={{ y: 0 }}
-                transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}
-                className="text-light/50 text-4xl"
-              >
-                Social Media
-              </motion.p>
-            </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", duration: 1.5, delay: 0.3 }}
-              className="flex gap-5 mt-2 flex-wrap"
-            >
-              <ButtonLink href="#" placeholder="Facebook" target="_blank" />
-              <ButtonLink href="#" placeholder="Twitter" target="_blank" />
-              <ButtonLink href="#" placeholder="Instagram" target="_blank" />
-              <ButtonLink href="#" placeholder="LinkedIn" target="_blank" />
-              <ButtonLink href="#" placeholder="GitHub" target="_blank" />
-            </motion.div>
-          </div>
-          <div className="flex gap-10 text-2xl">
-            <div>
-              <div className="overflow-hidden">
-                <motion.p
-                  initial={{ y: "100%" }}
-                  whileInView={{ y: 0 }}
-                  transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
-                  className="text-light/50 text-4xl"
-                >
-                  Get in touch
-                </motion.p>
-              </div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ ease: "easeInOut", duration: 1.5, delay: 0.4 }}
-                className="mt-2"
-              >
-                <ButtonLink
-                  href="mailto:shohan.sub.56@gmail.com"
-                  placeholder="shohan.sub.56@gmail.com"
-                  target="_blank"
-                />
-              </motion.div>
-            </div>
-            <div>
-              <div className="overflow-hidden">
-                <motion.p
-                  initial={{ y: "100%" }}
-                  whileInView={{ y: 0 }}
-                  transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
-                  className="text-light/50 text-4xl"
-                >
-                  Location
-                </motion.p>
-              </div>
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ ease: "easeInOut", duration: 1.5, delay: 0.4 }}
-                className="mt-2"
-              >
-                Sirajganj, Bangladesh
-              </motion.p>
-            </div>
-          </div>
-        </div>
+      <div className="mt-20 grid justify-center items-center gap-20">
 
-        <form
+      <form
           ref={form}
           onSubmit={handleSubmit}
-          className="right flex flex-col gap-10 text-2xl w-full"
+          className="right flex flex-col gap-10 text-2xl w-full border bg-accent/50 p-10 rounded-xl"
         >
           <div className="flex gap-10 w-full">
             <div className="overflow-hidden w-full">
@@ -199,7 +120,7 @@ const Contact = () => {
               />
             </motion.div>
           </div>
-          <div className="text-5xl flex justify-center relative overflow-hidden duration-500 group">
+          <div className="text-xl flex justify-center relative overflow-hidden duration-500 group">
             <motion.div
               initial={{ x: "-100%" }}
               whileInView={{ x: "100%" }}
@@ -217,15 +138,89 @@ const Contact = () => {
               whileInView={{ y: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
               type="submit"
-              className="uppercase flex w-full gap-3 justify-center"
+              className="flex w-full justify-center hover:bg-accent hover:text-error duration-200 rounded-full py-3"
             >
-              Submit{" "}
-              <span className="group-hover:rotate-90 duration-500">
-                <BsArrowUpRight />
+              Send{"  "}
+              <span className="group-hover:-rotate-12 duration-500">
+                <MdOutgoingMail className="ms-2 text-3xl" />
               </span>
             </motion.button>
           </div>
         </form>
+
+        <div className="left flex flex-col gap-10">
+          <div className="text-2xl">
+            <div className="overflow-hidden">
+              <motion.p
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}
+                className="text-light/50 text-4xl"
+              >
+                Social Media
+              </motion.p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: 1.5, delay: 0.3 }}
+              className="flex gap-5 mt-2 flex-wrap"
+            >
+              <ButtonLink href="#" placeholder="Facebook" target="_blank" />
+              <ButtonLink href="#" placeholder="Twitter" target="_blank" />
+              <ButtonLink href="#" placeholder="Instagram" target="_blank" />
+              <ButtonLink href="#" placeholder="LinkedIn" target="_blank" />
+            </motion.div>
+          </div>
+          <div className="flex gap-10 text-2xl">
+            <div>
+              <div className="overflow-hidden">
+                <motion.p
+                  initial={{ y: "100%" }}
+                  whileInView={{ y: 0 }}
+                  transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
+                  className="text-light/50 text-4xl"
+                >
+                  Email 
+                </motion.p>
+              </div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ ease: "easeInOut", duration: 1.5, delay: 0.4 }}
+                className="mt-2"
+              >
+                <ButtonLink
+                  href="mailto:sumona59shimu@gmail.com"
+                  placeholder="sumona59shimu@gmail.com"
+                  target="_blank"
+                />
+              </motion.div>
+            </div>
+            <div>
+              <div className="overflow-hidden">
+                <motion.p
+                  initial={{ y: "100%" }}
+                  whileInView={{ y: 0 }}
+                  transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
+                  className="text-light/50 text-4xl"
+                >
+                  Address
+                </motion.p>
+              </div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ ease: "easeInOut", duration: 1.5, delay: 0.4 }}
+                className="mt-2"
+              >
+                Chittagong, Bangladesh
+              </motion.p>
+            </div>
+          </div>
+        </div>
+
+        
       </div>
     </section>
   );
