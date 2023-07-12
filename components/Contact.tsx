@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { toast } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 import { BsArrowUpRight } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import Heading from "./Heading";
@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <section id="contact" className="wrapper section-padding">
       <Heading title="Contact Me" />
-
+      <Toaster />
       <div className="mt-20 grid justify-center items-center gap-20">
 
       <form
